@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dcmf677mj80yj"]
+
+[ext_resource type="Script" path="res://obstacle.gd" id="1_sl1jc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjqgx"]
+size = Vector2(40, 60)
+
+[node name="obstacle" type="Area2D" unique_id=528121725]
+script = ExtResource("1_sl1jc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=522312342]
+shape = SubResource("RectangleShape2D_bjqgx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1365943843]
